@@ -28,6 +28,10 @@ enum portX {
     portA, portB, portC, portD
 };
 
+enum ddrX {
+    ddrA, ddrB, ddrC, ddrD
+};
+
 enum pinX {
     pinA, pinB, pinC, pinD
 };

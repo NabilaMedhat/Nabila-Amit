@@ -45,6 +45,44 @@ void dirIO_DDRX(int pinNum, char port, int direction) {
 
 }
 
+void setDDRX(char ddrx) {
+
+    switch (ddrx) {
+
+        case 0:
+            DDRA = 0xFF;
+            break;
+        case 1:
+            DDRB = 0xFF;
+            break;
+        case 2:
+            DDRC = 0xFF;
+            break;
+        case 3:
+            DDRD = 0xFF;
+            break;
+    }
+}
+
+void resetDDRX(char ddrx) {
+
+    switch (ddrx) {
+
+        case 0:
+            DDRA = 0x00;
+            break;
+        case 1:
+            DDRB = 0x00;
+            break;
+        case 2:
+            DDRC = 0x00;
+            break;
+        case 3:
+            DDRD = 0x00;
+            break;
+    }
+}
+
 void setPORT(char port) {
 
     switch (port) {

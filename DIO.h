@@ -33,6 +33,9 @@
 
 void dirIO_DDRX(int pinNum, char port, int direction);
 
+void setDDRX(char ddrx);
+void resetDDRX(char ddrx);
+
 void setPORT(char port);
 void resetPORT(char port);
 
