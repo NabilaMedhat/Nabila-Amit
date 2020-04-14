@@ -31,10 +31,54 @@
 #ifndef XC_HEADER_TEMPLATE_H
 #define	XC_HEADER_TEMPLATE_H
 
+enum PortA {
+    adc0, adc1
+};
+
+enum PortB {
+    seg7
+};
+
+enum PortC {
+    scl, sda
+};
+
+enum PortD {
+    Button0, Button1, Button2, Relay, Buzzer, LED0, LED1, LED2
+};
+
+enum portX {
+    portA, portB, portC, portD
+};
+
+enum ddrX {
+    ddrA, ddrB, ddrC, ddrD
+};
+
+enum pinX {
+    pinA, pinB, pinC, pinD
+};
+
+enum Direction {
+    input, output
+};
+
+char o1[] = "Push your desired button";
+char runLED[] = "Shifting LED Lights";
+char on0[] = "LED0 flashed";
+char off0[] = "LED0 is OFF";
+char on1[] = "LED1 is ON";
+char off1[] = "LED1 is OFF";
+char on2[] = "LED2 is ON";
+char off2[] = "LED2 is OFF";
+char flag0 = 0;
+char flag1 = 0;
+char flag2 = 0;
+int i = 0;
+
 void dirIO_DDRX(int pinNum, char port, int direction);
 
-void setDDRX(char ddrx);
-void resetDDRX(char ddrx);
+void DDRXas(char ddrx, int direction);
 
 void setPORT(char port);
 void resetPORT(char port);
@@ -43,9 +87,10 @@ int isPressed(int pinNum, char pin);
 
 void setPIN(int pinNum, char port);
 void resetPIN(int pinNum, char port);
+void togglePIN(int pinNum, char port);
 
-
-
+void showLCD(int flag, char* x, char* y);
+void runLEDS();
 #include <xc.h> // include processor files - each processor file is guarded.  
 
 // TODO Insert appropriate #include <>

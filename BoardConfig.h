@@ -32,9 +32,9 @@
 #define	XC_HEADER_TEMPLATE_H
 
 
-#define LED2        1
-#define Buzzer      3
-#define Button0     0
+//#define LED2        1
+//#define Buzzer      3
+//#define Button0     0
 
 
 #include <xc.h> // include processor files - each processor file is guarded.  

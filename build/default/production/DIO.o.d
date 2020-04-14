@@ -11,7 +11,11 @@ build/default/production/DIO.o.d build/default/production/DIO.o: DIO.c \
  c:\program\ files\ (x86)\microchip\xc8\v2.10\avr\avr\include\avr\common.h \
  c:\program\ files\ (x86)\microchip\xc8\v2.10\avr\avr\include\avr\version.h \
  c:\program\ files\ (x86)\microchip\xc8\v2.10\avr\avr\include\avr\fuse.h \
- c:\program\ files\ (x86)\microchip\xc8\v2.10\avr\avr\include\avr\lock.h
+ c:\program\ files\ (x86)\microchip\xc8\v2.10\avr\avr\include\avr\lock.h \
+ lcd.h \
+ c:\program\ files\ (x86)\microchip\xc8\v2.10\avr\avr\include\util\delay.h \
+ c:\program\ files\ (x86)\microchip\xc8\v2.10\avr\avr\include\util\delay_basic.h \
+ c:\program\ files\ (x86)\microchip\xc8\v2.10\avr\avr\include\math.h
 
 c:\program\ files\ (x86)\microchip\xc8\v2.10\avr\lib\gcc\avr\5.4.0\include\xc.h:
 
@@ -38,3 +42,11 @@ c:\program\ files\ (x86)\microchip\xc8\v2.10\avr\avr\include\avr\version.h:
 c:\program\ files\ (x86)\microchip\xc8\v2.10\avr\avr\include\avr\fuse.h:
 
 c:\program\ files\ (x86)\microchip\xc8\v2.10\avr\avr\include\avr\lock.h:
+
+lcd.h:
+
+c:\program\ files\ (x86)\microchip\xc8\v2.10\avr\avr\include\util\delay.h:
+
+c:\program\ files\ (x86)\microchip\xc8\v2.10\avr\avr\include\util\delay_basic.h:
+
+c:\program\ files\ (x86)\microchip\xc8\v2.10\avr\avr\include\math.h:
