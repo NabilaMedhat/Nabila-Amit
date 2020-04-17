@@ -7,6 +7,7 @@
       <itemPath>BoardConfig.h</itemPath>
       <itemPath>DIO.h</itemPath>
       <itemPath>lcd.h</itemPath>
+      <itemPath>D_INT.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -18,6 +19,7 @@
       <itemPath>main.c</itemPath>
       <itemPath>DIO.c</itemPath>
       <itemPath>lcd.c</itemPath>
+      <itemPath>D_INT.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

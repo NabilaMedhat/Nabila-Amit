@@ -214,13 +214,3 @@ void togglePIN(int pinNum, char port) {
     }
 
 }
-
-void showLCD(int flag, char* x, char* y) {
-    if (flag) {
-        LCD_Clear();
-        LCD_String(x);
-    } else {
-        LCD_Clear();
-        LCD_String(y);
-    }
-}

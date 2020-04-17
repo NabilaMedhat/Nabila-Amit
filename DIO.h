@@ -63,14 +63,19 @@ enum Direction {
     input, output
 };
 
-char o1[] = "Push your desired button";
-char runLED[] = "Shifting LED Lights";
+enum LCDRows {
+    row0, row1
+};
+char pos = 0;
+char o1[] = "Push your Button";
+char runLED[] = "Shifting LEDS";
 char on0[] = "LED0 flashed";
 char off0[] = "LED0 is OFF";
 char on1[] = "LED1 is ON";
 char off1[] = "LED1 is OFF";
 char on2[] = "LED2 is ON";
 char off2[] = "LED2 is OFF";
+char INT[] = "***INTERRUPTS***";
 char flag0 = 0;
 char flag1 = 0;
 char flag2 = 0;
@@ -89,7 +94,9 @@ void setPIN(int pinNum, char port);
 void resetPIN(int pinNum, char port);
 void togglePIN(int pinNum, char port);
 
+
 void showLCD(int flag, char* x, char* y);
+void showLCD_XY(int flag, char row0, char row1, char* x, char* y, char* str);
 void runLEDS();
 #include <xc.h> // include processor files - each processor file is guarded.  
 
